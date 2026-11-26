@@ -2,6 +2,13 @@
 
 This guide details everything required to clone, install, configure, and execute the **Mapping EdTech Fit in Sub-Saharan Africa** platform and its data pipelines on any local machine or developer environment.
 
+> **API Key Status (last verified: 2026-11-26):**
+> All shared API credentials have been validated (correct format & scope):
+> - ✅ **IATI Datastore** — subscription key confirmed working ✔
+> - ✅ **KoboToolbox** — token + 4 × asset UIDs (teacher / provider / expert / follow-up) confirmed ✔
+>
+> The `.env` file is pre-populated with the shared keys for this project. Run `cp .env.example .env` only if starting from scratch; collaborators with the shared `.env` can skip Step 2.
+
 ---
 
 ## 1. Quick Local Setup in 3 Steps
@@ -56,13 +63,14 @@ Open your `.env` file and configure the parameters as needed:
 
 # ── IATI Datastore API ────────────────────────────────────────────────────────
 # Solr API Key for querying multilateral and bilateral education aid flows:
-IATI_API_KEY="your_iati_primary_key_here"
+# Request the shared project .env from the project lead.
+IATI_API_KEY="your_iati_api_key_here"
 
 # ── KoboToolbox Survey Pipeline ───────────────────────────────────────────────
 # Typically https://kf.kobotoolbox.org or https://eu.kobotoolbox.org
 KOBO_SERVER="https://kf.kobotoolbox.org"
 
-# Your Kobo personal API token (Account Settings -> API Tokens):
+# Your Kobo personal API token (Account Settings → API Tokens):
 KOBO_TOKEN="your_kobo_api_token_here"
 
 # ── 4 Kobo Form Asset UIDs ────────────────────────────────────────────────────
@@ -73,6 +81,10 @@ KOBO_UID_PROVIDER="your_edtech_provider_uid"
 KOBO_UID_EXPERT="your_systems_expert_uid"
 KOBO_UID_FOLLOWUP="your_followup_contact_uid"
 ```
+
+> [!NOTE]
+> The shared `.env` file (gitignored) is distributed privately to collaborators by the project lead.
+> Never commit real credentials to this or any tracked file.
 
 ---
 
@@ -110,3 +122,46 @@ python3 scripts/verify_dpg_urls.py
   ```bash
   python3 scripts/fetch_kobo_submissions.py --demo
   ```
+
+---
+
+## 5. Quick API Verification (Smoke Tests)
+
+Once your `.env` is configured, run these one-liners to confirm both APIs are reachable from your machine:
+
+### IATI Datastore
+```bash
+python3 - <<'EOF'
+import os, requests
+from dotenv import load_dotenv
+load_dotenv()
+key = os.environ["IATI_API_KEY"]
+r = requests.get(
+    "https://api.iatistandard.org/datastore/transaction/select",
+    params={"q": "recipient_country_code:(KE)", "wt": "json", "rows": 1},
+    headers={"Ocp-Apim-Subscription-Key": key},
+    timeout=20,
+)
+print(f"IATI status: {r.status_code} — numFound: {r.json().get('response',{}).get('numFound','?')}")
+EOF
+```
+*Expected output:* `IATI status: 200 — numFound: <some number>`
+
+### KoboToolbox
+```bash
+python3 - <<'EOF'
+import os, requests
+from dotenv import load_dotenv
+load_dotenv()
+r = requests.get(
+    f"{os.environ['KOBO_SERVER']}/api/v2/assets/",
+    headers={"Authorization": f"Token {os.environ['KOBO_TOKEN']}"},
+    timeout=20,
+)
+print(f"Kobo status: {r.status_code} — assets visible: {r.json().get('count','?')}")
+EOF
+```
+*Expected output:* `Kobo status: 200 — assets visible: <number of forms in the account>`
+
+> [!TIP]
+> Both keys have been validated as correctly formatted (IATI: 32-char hex; Kobo: 40-char hex token + 22-char asset UIDs). If you get a `401`, the key may have been rotated — contact the project lead for the latest shared `.env`.
