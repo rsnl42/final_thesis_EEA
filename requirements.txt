@@ -1,0 +1,31 @@
+# ==============================================================================
+# CC_3 – Python Script Dependencies
+# Install with:  pip install -r requirements.txt
+# Tested on Python 3.11
+# ==============================================================================
+
+# ── Data wrangling ─────────────────────────────────────────────────────────────
+pandas>=2.0
+numpy>=1.26
+pyarrow>=14.0          # Parquet / Arrow I/O (fetch_mlab.py)
+
+# ── HTTP / API clients ─────────────────────────────────────────────────────────
+requests>=2.31
+urllib3>=2.0           # Retry adapter used in several fetch scripts
+
+# ── Visualisation ──────────────────────────────────────────────────────────────
+matplotlib>=3.8        # generate_interactive_heatmap.py, run_analysis_b_*.py
+
+# ── Office document generation ─────────────────────────────────────────────────
+python-docx>=1.1       # append_defense_notes.py
+python-pptx>=1.0       # build_checkin_deck.py
+openpyxl>=3.1          # Excel read/write (kobo_json_to_excel.py, etc.)
+
+# ── Environment / secrets loading (local dev) ──────────────────────────────────
+python-dotenv>=1.0     # loads .env automatically when running scripts locally
+
+# ── Standard library modules used (no install needed) ──────────────────────────
+# argparse, ast, collections, csv, dataclasses, datetime, difflib,
+# hashlib, http.server, io, json, logging, math, os, pathlib, random,
+# re, shutil, socketserver, sqlite3, ssl, statistics, sys, tempfile,
+# time, typing, unicodedata, urllib, uuid, zipfile, xml.etree.ElementTree

@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.~lock.*
+.DS_Store
+
+.env
+.env.*
+!.env.example
+*.key
+
+# Do not add future raw Kobo exports or live intermediate workbooks.
+data/raw/kobo/
+data/raw/SSA_Survey_Responses_Live.xlsx
+data/processed/survey_dashboard_live.json
+
+# AoA survey source docs — Kobo links already distributed to end-users; keep locally for pipeline only
+AoA survey/
+
+# Large raw source files — kept locally for pipeline runs, not needed in repo
+# Processed outputs (data/processed/, out/) are committed instead
+data/raw/*.sav
+data/raw/*.xlsx
+data/raw/*.dta
+data/raw/*.spss
+
+# PISA PDFs — reference documents, too large for git
+PISA/
+
+# node / build artefacts
+node_modules/

@@ -1,0 +1,452 @@
+[
+  {
+    "_id": "demo_expert_0001",
+    "A1_system": "TZA",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0002",
+    "A1_system": "KEN",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0003",
+    "A1_system": "KEN",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0004",
+    "A1_system": "NGA",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0005",
+    "A1_system": "KEN",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "devices",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0006",
+    "A1_system": "GHA",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0007",
+    "A1_system": "TZA",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0008",
+    "A1_system": "ETH",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0009",
+    "A1_system": "ETH",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0010",
+    "A1_system": "KEN",
+    "A3_based": "in_country",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0011",
+    "A1_system": "NGA",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0012",
+    "A1_system": "TZA",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0013",
+    "A1_system": "ETH",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0014",
+    "A1_system": "ETH",
+    "A3_based": "in_country",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "devices",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0015",
+    "A1_system": "ETH",
+    "A3_based": "in_country",
+    "A4_perspective": "policy",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0016",
+    "A1_system": "ETH",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0017",
+    "A1_system": "ZMB",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "devices",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0018",
+    "A1_system": "NGA",
+    "A3_based": "outside_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0019",
+    "A1_system": "SEN",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0020",
+    "A1_system": "KEN",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0021",
+    "A1_system": "ETH",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "provision",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0022",
+    "A1_system": "GHA",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0023",
+    "A1_system": "GHA",
+    "A3_based": "outside_africa",
+    "A4_perspective": "provision",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0024",
+    "A1_system": "ETH",
+    "A3_based": "outside_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0025",
+    "A1_system": "GHA",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0026",
+    "A1_system": "SEN",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "devices",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0027",
+    "A1_system": "SEN",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0028",
+    "A1_system": "ZMB",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0029",
+    "A1_system": "TZA",
+    "A3_based": "outside_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0030",
+    "A1_system": "ETH",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0031",
+    "A1_system": "GHA",
+    "A3_based": "in_country",
+    "A4_perspective": "policy",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0032",
+    "A1_system": "TZA",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0033",
+    "A1_system": "ZMB",
+    "A3_based": "in_country",
+    "A4_perspective": "policy",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0034",
+    "A1_system": "NGA",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0035",
+    "A1_system": "GHA",
+    "A3_based": "in_country",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0036",
+    "A1_system": "GHA",
+    "A3_based": "in_country",
+    "A4_perspective": "policy",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "electricity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0037",
+    "A1_system": "GHA",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0038",
+    "A1_system": "ETH",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0039",
+    "A1_system": "TZA",
+    "A3_based": "in_country",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0040",
+    "A1_system": "KEN",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "devices",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0041",
+    "A1_system": "NGA",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0042",
+    "A1_system": "ZMB",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "provision",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0043",
+    "A1_system": "GHA",
+    "A3_based": "in_country",
+    "A4_perspective": "provision",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0044",
+    "A1_system": "ZMB",
+    "A3_based": "in_country",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0045",
+    "A1_system": "KEN",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "provision",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "devices",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0046",
+    "A1_system": "ZMB",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "neither",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0047",
+    "A1_system": "KEN",
+    "A3_based": "outside_africa",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "devices",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0048",
+    "A1_system": "RWA",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0049",
+    "A1_system": "NGA",
+    "A3_based": "in_country",
+    "A4_perspective": "research_eval",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "internet_connectivity",
+    "_synthetic": true
+  },
+  {
+    "_id": "demo_expert_0050",
+    "A1_system": "ZMB",
+    "A3_based": "elsewhere_africa",
+    "A4_perspective": "policy",
+    "D4_agree_i": "strongly_agree",
+    "F1_constraints_1": "teacher_capacity",
+    "_synthetic": true
+  }
+]
